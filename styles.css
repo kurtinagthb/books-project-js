@@ -23,9 +23,10 @@ footer {
 }
 nav {
       display: flex;
-      align-items: center;
-	  justify-content: flex-end;
-	  background-color: #E4E4E7;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      right: 0;
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #FFFFFF; 
 	  font-weight: bold;
@@ -76,6 +77,11 @@ nav {
 head {
 	  background-color: #E4E4E7;
 }
+
+.explore-head {
+	background-color: #E9D5FF;
+}
+
 header {
 	  background-color: #E4E4E7;
 	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,6 +89,11 @@ header {
 	  font-weight: bold;
 	  margin-left: 70px;
 }
+
+.explore-header {
+	background-color: #E9D5FF;
+}
+
 
 .header-top {
     display: flex;
@@ -254,8 +265,8 @@ body {
 
 .cart-counter {
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: 1px;
+    right: 1px;
     background-color: red;
     color: white;
     border-radius: 50%;
