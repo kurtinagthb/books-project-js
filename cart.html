@@ -2,7 +2,8 @@
 <html lang = 'en'>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--адаптивка-->
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="mainstyles.css">
+<link rel="stylesheet" type="text/css" href="cart.css">
 <title>Your Books Cart!</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <nav>
@@ -16,10 +17,13 @@
 </nav>
 </head>
 <header>
-<img src="imgs/logo.png" width="80" height="80" alt="Logo" class="logo">
-<hr class="line-style">
-<h1 style="padding: 20px 10px ">Your <span style="color: #6B6EF1;">Cart</h1></span>
-<h5 class="cart-items">Items in Cart: 0</h5>
+    <a href="index.html" class="logo-link">
+        <img src="imgs/logo.png" alt="books" class="logo">
+      </a>
+<div class="your-cart">
+<h1 style="padding: 20px 10px ">Your Cart</h1> 
+<h5 class="cart-items">0 items</h5>
+</div>
 </header>
 <body>
 <span class="cart-counter">0</span>
@@ -51,35 +55,44 @@
             <span class="value">$0.</span>
         </div>
         <button class="checkout-btn">
-         Check Out
+         Proceed to Checkout
         </button>
     </div>
 </div>
 </div>
 </body>
 <footer>
-<div>
-<h3>Books</h3>
-<p>Books delivered. Imagination unlimited.</p>
-</div>
-<div>
-<h3>Quick Links</h3>
-<ul>
-<li><a href = "index.html">Home</a></li>
-<li><a href = "">Contacts</a></li>
-<li><a href = "">About Us</a></li>
-</ul>
-</div>
-<div>
-<h3>Contacts</h3>
-<p>Email: kurtinaalina@gmail.com<br>Phone: +375 00 000-00-00<br>Vitebsk, Belarus</p>
-</div>
-<div>
-<h3>We Accept</h3>
-<img src=imgs\673469.png width="70" lenght="70" alt="Visa">
-<img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
-</div>
-</footer>
-<hr style="width: 10"/>
-<h4 style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">All rights reserved.</h4>
-</html>
+    <div class="footer-div">
+    <h3>Books</h3>
+    <p>Books delivered. Imagination unlimited.</p>
+    </div>
+    <div class="footer-links">
+    <h3>Quick Links</h3>
+    <ul>
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "">Contacts</a></li>
+    <li><a href = "">About Us</a></li>
+    </ul>
+    </div>
+    <div class="footer-links">
+    <h3>Contacts</h3>
+    <ul>
+        <li><a href="Email: mssonukr@gmail.com" 
+            onclick="alert('Go to Email?: mssonukr@gmail.com')">
+           example@site.com
+         </a></li>
+        <li><a href="Phone: +91 7061543815" 
+            onclick="alert('Go to Contacts?: +91 7061543815')">
+           +7 (916) 123-45-67
+         </a><li>
+    </ul>
+    </div>
+    <div class="footer-div">
+    <h3>We Accept</h3>
+    <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
+    <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+    </div>
+    </footer>
+    <hr style="width: 10"/>
+    <h4 style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">All rights reserved.</h4>
+    </html>

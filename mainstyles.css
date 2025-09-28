@@ -1,0 +1,13 @@
+@import url('blocks/search/search-form.css');
+@import url('blocks/header/header.css');
+@import url('blocks/body/body.css');
+@import url('blocks/footer/footer.css');
+@import url('blocks/nav/nav.css');
+@import url('blocks/books/book-container.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
