@@ -80,7 +80,75 @@ let arr3 = arr1.map((item, index) => {
 
 console.log(arr3);
 
-//TBA
+//Задание 5
+function map(arr, callback, thisArgument) {
+    let resultArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (i in arr) { 
+        let callbackResult;
+        if (thisArgument) {
+          callbackResult = callback.call(thisArgument, arr[i], i, arr);
+        } else {
+          callbackResult = callback(arr[i], i, arr);
+        }
+        resultArr[i] = callbackResult;
+      }
+    }
+    return resultArr;
+  }
+
+//Задание 6
+function filter(arr, callback, thisArgument) {
+    let resultArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (i in arr) {
+        let ifPush;
+        if (thisArgument) {
+          ifPush = callback.call(thisArgument, arr[i], i, arr);
+        } else {
+          ifPush = callback(arr[i], i, arr);
+        }
+        if (ifPush) {
+          resultArr.push(arr[i]);
+        }
+      }
+    }
+    return resultArr;
+  }
+
+//Задание 7
+function reduce(arr, callback, initialValue) {
+    if (arr.length === 0 && initialValue === undefined) {
+      throw new TypeError('Нет элемента для инициализации метода.');
+    }
+    let accumulator;
+    let startIndex;
+    if (initialValue !== undefined) {
+      accumulator = initialValue;
+      startIndex = 0;
+    } else {
+      let foundFirst = false;
+      for (let i = 0; i < arr.length; i++) {
+        if (i in arr) {
+          accumulator = arr[i];
+          startIndex = i + 1;
+          foundFirst = true;
+          break;
+        }
+      }
+      if (!foundFirst) {
+        throw new TypeError('Нет элемента для инициализации метода.');
+      }
+    }
+    for (let i = startIndex; i < arr.length; i++) {
+      if (i in arr) {
+        accumulator = callback(accumulator, arr[i], i, arr);
+      }
+    }
+    
+    return accumulator;
+  }
+
 
 // 3 ЧАСТЬ
 //Задание 1
@@ -90,7 +158,7 @@ book.author = "Book Author"
 book.year = "XXXX"
 
 
-//Задание 
+//Задание 2
 console.log(`Название: ${book.title}, Автор: ${book.author}`);
 
 //Задание 3
