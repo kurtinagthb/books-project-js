@@ -11,3 +11,21 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .menu {
+        display: none;
+    }
+}
