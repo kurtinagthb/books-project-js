@@ -39,6 +39,49 @@ function factorial (n) {
 console.log(factorial(number))
 }
 
+// 2 ЧАСТЬ
+
+//Задание 1
+const arr = [1,3,5,6]
+let result = 0
+for (let i=0; i<arr.length; i++) {
+    result += arr[i]
+}
+console.log(result)
+
+***
+const arr = [1,3,5,6]
+const initialValue = 0;
+const sum = arr.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue,
+);
+console.log(sum)
+
+//Задание 2
+const arr = [1,3,5,6,2]
+let evenArr = arr.filter(function(number) {
+  return number%2==0;
+});
+console.log(evenArr);
+
+//Задание 3
+const arr = [1,3,5,6]
+arrSorted = arr.sort((a, b) => b - a);
+console.log(arrSorted)
+
+//Задание 4
+const arr1 = [1,3,5,6]
+const arr2 = [1,3,7,8]
+
+let arr3 = arr1.map((item, index) => {
+    return item === arr2[index] ? item : null;
+});
+
+console.log(arr3);
+
+//TBA
+
 // 3 ЧАСТЬ
 //Задание 1
 let book = new Object();
@@ -81,90 +124,3 @@ function getBookTitle(arr, title) {
 }
 
 console.log(getBookTitle(book_array));
-
-// 2 ЧАСТЬ
-
-//Задание 1
-const arr = [1,3,5,6]
-let result = 0
-for (let i=0; i<arr.length; i++) {
-    result += arr[i]
-}
-console.log(result)
-
-***
-const arr = [1,3,5,6]
-const initialValue = 0;
-const sum = arr.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  initialValue,
-);
-console.log(sum)
-
-//Задание 2
-const arr = [1,3,5,6,2]
-let evenArr = arr.filter(function(number) {
-  return number%2==0;
-});
-console.log(evenArr);
-
-//Задание 3
-const arr = [1,3,5,6]
-arrSorted = arr.sort((a, b) => b - a);
-console.log(arrSorted)
-
-//Задание 4
-const arr1 = [1,3,5,6]
-const arr2 = [1,3,7,8]
-
-let arr3 = arr1.map((item, index) => {
-    return item === arr2[index] ? item : null;
-});
-
-console.log(arr3);
-
-//Задание 5
-function map(arr, callback, thisArgument) {
-  let resultArr = [];
-  for (let i=0; i<arr.length; i++) {
-      let callbackResult;
-      if (thisArg) {
-          callbackResult = callback.call(thisArgument, arr[i], i, arr);
-          } else {
-              callbackResult = callback(arr[i], i, arr);
-          }
-          resultArr[i] = callbackResult;
-  }
-return resultArr;
-}
-
-//Задание 6
-function filter(arr, callback, thisArgument) {
-  let resultArr = [];
-  for (let i=0; i<arr.length; i++) {
-      if (i in arr) {
-          let ifPush;
-          if (thisArgument) {
-              ifPush = callback.call(thisArg, arr[i], i, arr);
-          } else {
-              ifPush = callback(arr[i], i, arr);
-          }
-          if (ifPush) {
-              result.push(arr[i]); 
-          }
-      }
-  }
-  return resultArr;
-}
-
-//Задание 7
-function reduce(arr, callback, initialArgument) {
-  let accumulator;
-  let startIndex;
-  for (let i=startIndex; i<arr.length; i++) {
-      if (i in arr) {
-          accumulator = callback(accumulator, arr[i], i, arr);
-  }
-  }
- return accumulator;
-}
