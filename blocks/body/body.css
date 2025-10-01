@@ -1,0 +1,63 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #312F5A;
+    flex-grow: 1;
+}
+
+.h2 {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.award-container {
+    background-color: #FEF9C3;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.award-content {
+    align-items: baseline;
+    margin-top: 6rem;
+    margin-left: 3rem;
+
+}
+
+.award-pic {
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+
+.explore-button {
+    display: inline-block;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background-color: #6B6EF1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.explore-button:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.explore-button:active {
+    transform: translateY(0);
+}

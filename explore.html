@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang = 'en'>
 <head>
-<div class="explore-head">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--адаптивка-->
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+<link rel="stylesheet" type="text/css" href="mainstyles.css">
+<link rel="stylesheet" type="text/css" href="explore.css">
 <title>Books!</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 </head>
 <header>
-<div class="explore-header">
-<img src="imgs/logo.png" width="80" height="80" alt="Logo" class="logo">
+    <a href="index.html" class="logo-link">
+        <img src="imgs/logo.png" alt="books" class="logo">
+      </a>
 <div class="header-container">
     <div class="header-content">
         <p>Find your favorite — 1200+ books availible.</p>
-        <div class="search-container">
-            <form action="#" class="search-form">
-                <input type="search" class="search-form-input" placeholder="Search For Books...">
-            </form>
+        <div class="search-form">
+            <input type="search" class="search-form__input" placeholder="Search For Books...">
+            <i class="search-form__icon fas fa-search"></i>
         </div>
     </div>
 <img src="imgs/bookpic.png" width="300" height="200" alt="Books" class="main-pic">
-</div>
 </div>
 </header>
 <body>
@@ -36,158 +36,310 @@
 </div>
 </nav>
 <h2 class="h2">New Releases</h2>
-   <div class="books-container">
-
-        <div class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 1</h3>
-            <p class="book-author">Author 1</p>
-            <span class="book-genre">Genre 1</span>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+<ul class="books-container">
+    <li class="book-card">
+        <div class="book-cover">Book cover</div>
+        <h3 class="book-title">Book 1</h3>
+        <div class="book-author-rating">
+        <p class="book-author">Author 1</p>
+        <div class="book-rating">
+            <div class="stars" style="--rating: 5;">★★★★★</div>
         </div>
-
-         <div class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 2</h3>
-            <p class="book-author">Author 2</p>
-            <span class="book-genre">Genre 2</span>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
         </div>
+        <p class="book-desc">Book description.</p>
+        <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    </li>
 
-         <div class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 3</h3>
-            <p class="book-author">Author 3</p>
-            <span class="book-genre">Genre 3</span>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    <li class="book-card">
+        <div class="book-cover">Book cover</div>
+        <h3 class="book-title">Book 2</h3>
+        <div class="book-author-rating">
+        <p class="book-author">Author 2</p>
+        <div class="book-rating">
+            <div class="stars" style="--rating: 5;">★★★★★</div>
         </div>
+        </div>
+        <p class="book-desc">Book description.</p>
+        <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    </li>
 
-         <div class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 4</h3>
-            <p class="book-author">Author 4</p>
-            <span class="book-genre">Genre 4</span>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    <li class="book-card">
+        <div class="book-cover">Book cover</div>
+        <h3 class="book-title">Book 3</h3>
+        <div class="book-author-rating">
+        <p class="book-author">Author 3</p>
+        <div class="book-rating">
+            <div class="stars" style="--rating: 5;">★★★★★</div>
         </div>
+        </div>
+        <p class="book-desc">Book description.</p>
+        <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    </li>
 
-        <div class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 5</h3>
-            <p class="book-author">Author 5</p>
-            <span class="book-genre">Genre 5</span>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+     <li class="book-card">
+        <div class="book-cover">Book cover</div>
+        <h3 class="book-title">Book 4</h3>
+        <div class="book-author-rating">
+        <p class="book-author">Author 4</p>
+        <div class="book-rating">
+            <div class="stars" style="--rating: 5;">★★★★★</div>
         </div>
-    </div>
+        </div>
+        <p class="book-desc">Book description.</p>
+        <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    </li>
+
+    <li class="book-card">
+        <div class="book-cover">Book cover</div>
+        <h3 class="book-title">Book 5</h3>
+        <div class="book-author-rating">
+        <p class="book-author">Author 5</p>
+        <div class="book-rating">
+            <div class="stars" style="--rating: 5;">★★★★★</div>
+        </div>
+        </div>
+        <p class="book-desc">Book description.</p>
+        <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+    </li>
+</ul>
+
 	<h2 class="h2">Top Rated Books</h2>
-   <div class="books-container">
-
-        <div class="book-card">
+    <ul class="books-container">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 1</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 1</p>
-            <span class="book-genre">Genre 1</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-         <div class="book-card">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 2</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 2</p>
-            <span class="book-genre">Genre 2</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-         <div class="book-card">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 3</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 3</p>
-            <span class="book-genre">Genre 3</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-         <div class="book-card">
+         <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 4</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 4</p>
-            <span class="book-genre">Genre 4</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-        <div class="book-card">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 5</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 5</p>
-            <span class="book-genre">Genre 5</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
-    </div>
+        </li>
+    </ul>
+
 	<h2 class="h2">Our Suggestions</h2>
-   <div class="books-container">
-
-        <div class="book-card">
+    <ul class="books-container">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 1</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 1</p>
-            <span class="book-genre">Genre 1</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-         <div class="book-card">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 2</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 2</p>
-            <span class="book-genre">Genre 2</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-         <div class="book-card">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 3</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 3</p>
-            <span class="book-genre">Genre 3</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-         <div class="book-card">
+         <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 4</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 4</p>
-            <span class="book-genre">Genre 4</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
+        </li>
 
-        <div class="book-card">
+        <li class="book-card">
             <div class="book-cover">Book cover</div>
             <h3 class="book-title">Book 5</h3>
+            <div class="book-author-rating">
             <p class="book-author">Author 5</p>
-            <span class="book-genre">Genre 5</span>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
             <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </div>
-    </div>
+        </li>
+    </ul>
+
+    <h2 class="h2">Most Popular Books</h2>
+    <ul class="books-container">
+        <li class="book-card">
+            <div class="book-cover">Book cover</div>
+            <h3 class="book-title">Book 1</h3>
+            <div class="book-author-rating">
+            <p class="book-author">Author 1</p>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
+            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+        </li>
+
+        <li class="book-card">
+            <div class="book-cover">Book cover</div>
+            <h3 class="book-title">Book 2</h3>
+            <div class="book-author-rating">
+            <p class="book-author">Author 2</p>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
+            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+        </li>
+
+        <li class="book-card">
+            <div class="book-cover">Book cover</div>
+            <h3 class="book-title">Book 3</h3>
+            <div class="book-author-rating">
+            <p class="book-author">Author 3</p>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
+            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+        </li>
+
+         <li class="book-card">
+            <div class="book-cover">Book cover</div>
+            <h3 class="book-title">Book 4</h3>
+            <div class="book-author-rating">
+            <p class="book-author">Author 4</p>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
+            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+        </li>
+
+        <li class="book-card">
+            <div class="book-cover">Book cover</div>
+            <h3 class="book-title">Book 5</h3>
+            <div class="book-author-rating">
+            <p class="book-author">Author 5</p>
+            <div class="book-rating">
+                <div class="stars" style="--rating: 5;">★★★★★</div>
+            </div>
+            </div>
+            <p class="book-desc">Book description.</p>
+            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
+        </li>
+    </ul>
+
 </body>
 <footer>
-<div>
-<h3>Books</h3>
-<p>Books delivered. Imagination unlimited.</p>
-</div>
-<div>
-<h3>Quick Links</h3>
-<ul>
-<li><a href = "index.html">Home</a></li>
-<li><a href = "">Contacts</a></li>
-<li><a href = "">About Us</a></li>
-</ul>
-</div>
-<div>
-<h3>Contacts</h3>
-<p>Email: kurtinaalina@gmail.com<br>Phone: +375 00 000-00-00<br>Vitebsk, Belarus</p>
-</div>
-<div>
-<h3>We Accept</h3>
-<img src=imgs\673469.png width="70" lenght="70" alt="Visa">
-<img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
-</div>
-</footer>
-<hr style="width: 10"/>
-<h4 style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">All rights reserved.</h4>
-</html>
+    <div class="footer-div">
+    <h3>Books</h3>
+    <p>Books delivered. Imagination unlimited.</p>
+    </div>
+    <div class="footer-links">
+    <h3>Quick Links</h3>
+    <ul>
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "">Contacts</a></li>
+    <li><a href = "">About Us</a></li>
+    </ul>
+    </div>
+    <div class="footer-links">
+    <h3>Contacts</h3>
+    <ul>
+        <li><a href="Email: mssonukr@gmail.com" 
+            onclick="alert('Go to Email?: mssonukr@gmail.com')">
+           example@site.com
+         </a></li>
+        <li><a href="Phone: +91 7061543815" 
+            onclick="alert('Go to Contacts?: +91 7061543815')">
+           +7 (916) 123-45-67
+         </a><li>
+    </ul>
+    </div>
+    <div class="footer-div">
+    <h3>We Accept</h3>
+    <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
+    <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+    </div>
+    </footer>
+    <hr style="width: 10"/>
+    <h4 style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">All rights reserved.</h4>
+    </html>
