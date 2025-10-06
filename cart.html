@@ -1,98 +1,101 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--адаптивка-->
-<link rel="stylesheet" type="text/css" href="mainstyles.css">
-<link rel="stylesheet" type="text/css" href="cart.css">
-<title>Your Books Cart!</title>
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<nav>
-<ul class="nav-links">
-<li><a href = "index.html">HOME</a></li>
-<li><a href = "explore.html">EXPLORE</a></li>
-<li><a href = "">SHOP</a></li>
-<li><a href = "">SELL YOUR BOOK</a></li>
-<li><a href = "cart.html">CART</a></li>
-</ul>
-</nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mainstyles.css">
+    <link rel="stylesheet" type="text/css" href="page-exclusive-css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Your Books Cart!</title>
+    <link rel="icon" href="imgs/icon.svg" type="image/svg+xml">
+    <nav>
+        <span class="cart-counter" id="itemsCount">0</span>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="">SHOP</a></li>
+            <li><a href="">SELL YOUR BOOK</a></li>
+            <li><a href="cart.html">CART</a></li>
+        </ul>
+    </nav>
 </head>
 <header>
     <a href="index.html" class="logo-link">
         <img src="imgs/logo.png" alt="books" class="logo">
-      </a>
-<div class="your-cart">
-<h1 style="padding: 20px 10px ">Your Cart</h1> 
-<h5 class="cart-items">0 items</h5>
-</div>
+    </a>
+    <div class="your-cart">
+        <h1 style="padding: 20px 10px ">Your Cart</h1>
+        <h5 class="cart-items">0 items</h5>
+    </div>
 </header>
+
 <body>
-<span class="cart-counter">0</span>
-<div class="cart-body">
-<div class="cart">
-<!--тут будут отражаться покупки-->
-</div>
-<div class="cart-but-empty">
-<h2>Your cart is empty right now.</h2>
-<p>Not to late to fill it, thought. ;)</p>
- <a href="index.html" class="continue-shopping-btn">Back to Shopping.</a>
-</div>
-<div class="order-summary">
-    <div class="summary-header">
-        <h3>Order Summary</h3>
-    </div>
-    <div class="summary-body">
-        <div class="summary-row">
-            <span class="label">Subtotal:</span>
-            <span class="value">$0.</span>
+    <div class="cart-body">
+        <div class="cart">
+            <div class="cart-items-container" id="cartItemsContainer">
+            </div>
         </div>
-        <div class="summary-row">
-            <span class="label">Shipping:</span>
-            <span class="value">$0.</span>
+
+        <div class="order-summary">
+            <div class="summary-header">
+                <h3>Order Summary</h3>
+            </div>
+            <div class="summary-body">
+                <div class="summary-row">
+                    <span class="label">Subtotal:</span>
+                    <span class="value">$0.</span>
+                </div>
+                <div class="summary-row">
+                    <span class="label">Shipping:</span>
+                    <span class="value">$0.</span>
+                </div>
+                <div class="divider"></div>
+                <div class="summary-row total">
+                    <span class="label">Total:</span>
+                    <span class="value">$0.</span>
+                </div>
+                <button class="checkout-btn">
+                    Proceed to Checkout
+                </button>
+            </div>
         </div>
-        <div class="divider"></div>
-        <div class="summary-row total">
-            <span class="label">Total:</span>
-            <span class="value">$0.</span>
+    </div>
+    <footer>
+        <div class="footer-div">
+            <h3>Books</h3>
+            <p>Books delivered. Imagination unlimited.</p>
         </div>
-        <button class="checkout-btn">
-         Proceed to Checkout
-        </button>
-    </div>
-</div>
-</div>
-</body>
-<footer>
-    <div class="footer-div">
-    <h3>Books</h3>
-    <p>Books delivered. Imagination unlimited.</p>
-    </div>
-    <div class="footer-links">
-    <h3>Quick Links</h3>
-    <ul>
-    <li><a href = "index.html">Home</a></li>
-    <li><a href = "">Contacts</a></li>
-    <li><a href = "">About Us</a></li>
-    </ul>
-    </div>
-    <div class="footer-links">
-    <h3>Contacts</h3>
-    <ul>
-        <li><a href="Email: mssonukr@gmail.com" 
-            onclick="alert('Go to Email?: mssonukr@gmail.com')">
-           example@site.com
-         </a></li>
-        <li><a href="Phone: +91 7061543815" 
-            onclick="alert('Go to Contacts?: +91 7061543815')">
-           +7 (916) 123-45-67
-         </a><li>
-    </ul>
-    </div>
-    <div class="footer-div">
-    <h3>We Accept</h3>
-    <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
-    <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
-    </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>Contacts</h3>
+            <ul>
+                <li><a href="Email: mssonukr@gmail.com" onclick="alert('Go to Email?: mssonukr@gmail.com')">
+                        example@site.com
+                    </a></li>
+                <li><a href="Phone: +91 7061543815" onclick="alert('Go to Contacts?: +91 7061543815')">
+                        +7 (916) 123-45-67
+                    </a>
+                <li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>We Accept</h3>
+            <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
+            <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+        </div>
     </footer>
-    <hr style="width: 10"/>
-    <h4 style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">All rights reserved.</h4>
-    </html>
+    <hr style="width: 10" />
+    <h4
+        style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">
+        All rights reserved.</h4>
+    <script src="modules/cart.js"></script>
+</body>
+
+</html>
