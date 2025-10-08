@@ -2,6 +2,7 @@ nav {
     display: flex;
     padding: 1rem 2rem;
     position: fixed;
+    z-index: 1000;
     top: 0;
     right: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,11 +10,13 @@ nav {
     gap: 20px;
     background: linear-gradient(to bottom, #E4E4E7, transparent);
 }
+
 .nav-links {
-          display: flex;
-          gap: 30px;
-          list-style: none;
-      }
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
       
 .nav-links a {
           color:  #312F5A;
@@ -25,7 +28,7 @@ nav {
           position: relative;
       }
       
-.nav-links a:hover {           /*анимация*/
+.nav-links a:hover {           
           color: #312F5A;
       }
 
@@ -51,3 +54,11 @@ nav {
 .nav-links a.active::after {
           width: 100%;
       }
+
+.nav-logo {
+    position: fixed;
+    margin-left: 3rem; 
+    object-fit: contain;
+    width: 70px;
+    height: 70px;
+}

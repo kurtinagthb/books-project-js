@@ -1,220 +1,321 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
 <link rel="stylesheet" type="text/css" href="mainstyles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--для иконки поиска*-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--адаптивка-->
-<title>Books!</title>
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books!</title>
+    <link rel="icon" href="imgs/icon.svg" type="image/svg+xml">
 </head>
+
 <header>
-<a href="index.html" class="logo-link">
-  <img src="imgs/logo.png" alt="books" class="logo">
-</a>
-<div class="header-container">
-    <div class="header-content">
-        <h1>Buy and sell your books <span style="color: #6B6EF1;">for the best prices.</span></h1>
-        <p>Find and read more you'll love, and keep track of the books you want to read.<br>
-           Be part of the world's largest community of book lovers on Goodreads.</p>
-           <div class="search-form">
-            <input type="search" class="search-form__input" placeholder="Search For Books...">
-            <i class="search-form__icon fas fa-search"></i>
+    <a href="index.html" class="logo-link">
+        <img src="imgs/logo.png" alt="books" class="logo">
+    </a>
+    <div class="header-container">
+        <div class="header-content">
+            <h1>Buy and sell your books <span style="color: #6B6EF1;">for the best prices.</span></h1>
+            <p>Find and read more you'll love, and keep track of the books you want to read.<br>
+                Be part of the world's largest community of book lovers on Goodreads.</p>
+            <div class="search-form" id="search_form">
+                <input type="search" class="search-form__input" placeholder="Search For Books...">
+                <i class="search-form__icon fas fa-search"></i>
+            </div>
         </div>
+        <img src="imgs/mainpic.png" width="250" height="300" alt="Books" class="main-pic">
     </div>
-<img src="imgs/mainpic.png" width="250" height="300" alt="Books" class="main-pic">
-</div>
 </header>
+
 <nav>
-<ul class="nav-links">
-<li><a href = "index.html">HOME</a></li>
-<li><a href = "explore.html">EXPLORE</a></li>
-<li><a href = "">SHOP</a></li>
-<li><a href = "">SELL YOUR BOOK</a></li>
-<li><a href = "cart.html">CART</a></li>
-</ul>
+    <span class="cart-counter" id="itemsCount">0</span>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="explore.html">EXPLORE</a></li>
+        <li><a href="">SHOP</a></li>
+        <li><a href="">SELL YOUR BOOK</a></li>
+        <li><a href="cart.html">CART</a></li>
+    </ul>
 </nav>
+
 <body>
+    <h2 class="h2">Book List</h2>
+    <div class="carouselcontainer swiper">
+        <div class="book-swiper">
+            <ul class="books-container swiper-wrapper">
+                <li class="book-card swiper-slide" data-id="1">
+                    <div class="book-cover">
+                        <img src="imgs/bc/1.svg">
+                    </div>
+                    <h3 class="book-title">Cooking made easy</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Emily Clark</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">Simple recipes for everyday cooking.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-<h2 class="h2">Book List</h2>
-   <ul class="books-container">
-        <li class="book-card">
+                <li class="book-card  swiper-slide" data-id="2">
+                    <div class="book-cover">
+                        <img src="imgs/bc/2.svg">
+                    </div>
+                    <h3 class="book-title">Mystery of the old house</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">John Doe</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A thrilling mystery set in an old house.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 1</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 1</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+                <li class="book-card  swiper-slide" data-id="3">
+                    <div class="book-cover">
+                        <img src="imgs/bc/3.svg">
+                    </div><h3 class="book-title">Shadows of Doubt</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Sarah Johnson</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A gripping psychological thriller.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-        <li class="book-card">
+                <li class="book-card  swiper-slide" data-id="4">
+                    <div class="book-cover">
+                        <img src="imgs/bc/4.svg">
+                    </div>
+                    <h3 class="book-title">The Art of War</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Sun Tzu</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A classic treatise on strategy.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 2</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 2</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+                <li class="book-card  swiper-slide" data-id="5">
+                    <div class="book-cover">
+                        <img src="imgs/bc/5.svg">
+                    </div>
+                    <h3 class="book-title">The Great Gatsby</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">F. Scott Fitzgerald</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A story of love and ambition.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-        <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 3</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 3</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+                <li class="book-card  swiper-slide" data-id="6">
+                    <div class="book-cover">
+                        <img src="imgs/bc/6.svg">
+                    </div>
+                    <h3 class="book-title">TESTSUBJECT</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Test Subject.</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A test subject to test the carousel.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <li class="book-card  swiper-slide" data-id="7">
+                    <div class="book-cover">
+                        <img src="imgs/bc/7.svg">
+                    </div>
+                    <h3 class="book-title">TESTSUBJECT2</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Test2 Subject2.</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A test subject to test the carousel. 2</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+            </ul>
+        </div>
 
-         <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 4</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 4</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
 
-        <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 5</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 5</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
-    </ul>
+    </div>
+    <div class="award-container">
+        <div class="award-content">
+            <h2>2025 National Book Awards for Fiction Shortlist</h2>
+            <form action="explore.html" method="get">
+                <button type="submit" class="explore-button">Explore Now</button>
+            </form>
+        </div>
+        <img src="imgs/award.png" width="250" height="300" alt="Books" class="award-pic">
 
-<div class="award-container">
-    <div class="award-content"> 
-<h2>2025 National Book Awards for Fiction Shortlist</h2>
-<form action="explore.html" method="get">
-    <button type="submit" class="explore-button">Explore Now</button>
-</form>
-   </div>
-<img src="imgs/award.png" width="250" height="300" alt="Books" class="award-pic">
-
-</div>
+    </div>
     <h2 class="h2">New Realeases</h2>
-    <ul class="books-container">
-        <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 1</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 1</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+    <div class="carouselcontainer swiper">
+        <div class="book-swiper">
+            <ul class="books-container swiper-wrapper">
+                <li class="book-card swiper-slide" data-id="8">
+                    <div class="book-cover">
+                        <img src="imgs/bc/1.svg">
+                    </div>
+                    <h3 class="book-title">Because I'm Happy</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Clap Along</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">If you feel like a room without a roof.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-        <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 2</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 2</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+                <li class="book-card  swiper-slide" data-id="9">
+                    <div class="book-cover">
+                        <img src="imgs/bc/2.svg">
+                    </div>
+                    <h3 class="book-title">The Amber City</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Jane Doe</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A mapmaker in a city that doesn't exist.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-        <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 3</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 3</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+                <li class="book-card  swiper-slide" data-id="10">
+                    <div class="book-cover">
+                        <img src="imgs/bc/3.svg">
+                    </div><h3 class="book-title">Echoes of a Silent Star</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Kaelen Vance</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">Survivor of a space mission awakens.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-         <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 4</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 4</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
+                <li class="book-card  swiper-slide" data-id="11">
+                    <div class="book-cover">
+                        <img src="imgs/bc/4.svg">
+                    </div>
+                    <h3 class="book-title">The Gilded Wyrm</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Elara Vancroft</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">Where debt is etched onto skin.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
 
-        <li class="book-card">
-            <div class="book-cover">Book cover</div>
-            <h3 class="book-title">Book 5</h3>
-            <div class="book-author-rating">
-            <p class="book-author">Author 5</p>
-            <div class="book-rating">
-                <div class="stars" style="--rating: 5;">★★★★★</div>
-            </div>
-            </div>
-            <p class="book-desc">Book description.</p>
-            <button class="add-to-cart"><a href="cart.html">Add to Cart</a></button>
-        </li>
-    </ul>
+                <li class="book-card  swiper-slide" data-id="12">
+                    <div class="book-cover">
+                        <img src="imgs/bc/5.svg">
+                    </div>
+                    <h3 class="book-title">Whispers in the Sheetrock</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Moira Finch</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A family moves into their dream home.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+
+                <li class="book-card  swiper-slide" data-id="13">
+                    <div class="book-cover">
+                        <img src="imgs/bc/6.svg">
+                    </div>
+                    <h3 class="book-title">TESTSUBJECT3</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Test3 Subject3.</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A test subject to test the carousel 3.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <li class="book-card  swiper-slide" data-id="14">
+                    <div class="book-cover">
+                        <img src="imgs/bc/7.svg">
+                    </div>
+                    <h3 class="book-title">TESTSUBJECT4</h3>
+                    <div class="book-author-rating">
+                        <p class="book-author">Test4 Subject4.</p>
+                        <div class="book-rating">
+                            <div class="stars" style="--rating: 5;">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="book-desc">A test subject to test the carousel 4.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+    <footer>
+        <div class="footer-div">
+            <h3>Books</h3>
+            <p>Books delivered. Imagination unlimited.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h3>Contacts</h3>
+            <ul>
+                <li><a href="Email: mssonukr@gmail.com" onclick="alert('Go to Email?: mssonukr@gmail.com')">
+                        example@site.com
+                    </a></li>
+                <li><a href="Phone: +91 7061543815" onclick="alert('Go to Contacts?: +91 7061543815')">
+                        +7 (916) 123-45-67
+                    </a>
+                <li>
+            </ul>
+        </div>
+        <div class="footer-div">
+            <h3>We Accept</h3>
+            <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
+            <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+        </div>
+    </footer>
+    <hr style="width: 10" />
+    <h4
+        style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">
+        All rights reserved.</h4>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="modules/swiper.js"></script>
+    <script src="modules/cart.js"></script>
+    <script src="modules/search.js"></script>
 </body>
-<footer>
-<div class="footer-div">
-<h3>Books</h3>
-<p>Books delivered. Imagination unlimited.</p>
-</div>
-<div class="footer-links">
-<h3>Quick Links</h3>
-<ul>
-<li><a href = "index.html">Home</a></li>
-<li><a href = "">Contacts</a></li>
-<li><a href = "">About Us</a></li>
-</ul>
-</div>
-<div class="footer-links">
-<h3>Contacts</h3>
-<ul>
-    <li><a href="Email: mssonukr@gmail.com" 
-        onclick="alert('Go to Email?: mssonukr@gmail.com')">
-       example@site.com
-     </a></li>
-    <li><a href="Phone: +91 7061543815" 
-        onclick="alert('Go to Contacts?: +91 7061543815')">
-       +7 (916) 123-45-67
-     </a><li>
-</ul>
-</div>
-<div class="footer-div">
-<h3>We Accept</h3>
-<img src=imgs\673469.png width="70" lenght="70" alt="Visa">
-<img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
-</div>
-</footer>
-<hr style="width: 10"/>
-<h4 style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">All rights reserved.</h4>
+
 </html>
