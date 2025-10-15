@@ -1,9 +1,9 @@
 
 header {
-	background-color: #E9D5FF;
-    font-weight: bold;
-    font-size: 20px;
+	background-color: var(--bg-quinary);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-3xl);
 }
 nav {
-    background: linear-gradient(to bottom, #E9D5FF, transparent);
+    background: linear-gradient(to bottom, var(--bg-quinary), transparent);
 }

@@ -1,22 +1,22 @@
 body {
-    background-color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #312F5A;
+    background-color: var(--bg-primary);
+    font-family: var(--font-primary);
+    color: var(--text-primary);
     flex-grow: 1;
 }
 
 .h2 {
-    background-color: white;
+    background-color: var(--bg-primary);
     text-align: center;
-    padding: 30px;
+    padding: var(--spacing-4xl);
 }
 
 .award-container {
-    background-color: #FEF9C3;
+    background-color: var(--bg-secondary);
     display: flex;
     max-width: 100%;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: var(--spacing-3xl) var(--spacing-5xl);
 }
 
 .award-content {
@@ -36,26 +36,26 @@ body {
 .explore-button {
     display: inline-block;
     border: none;
-    padding: 12px 40px;
-    border-radius: 5px;
+    padding: var(--spacing-lg) var(--spacing-5xl);
+    border-radius: var(--radius-md);
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    background-color: #6B6EF1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    background-color: var(--color-primary);
+    font-family: var(--font-primary);
+    color: var(--text-light);
+    font-weight: var(--font-weight-bold);
+    transition: var(--transition-fast);
     position: relative;
     overflow: hidden;
-    font-size: 14px;
+    font-size: var(--font-size-md);
     margin-top: 1rem;
 }
 
 .explore-button:hover {
-    background-color: #000000;
+    background-color: var(--color-hover);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-md);
 }
 
 .explore-button:active {

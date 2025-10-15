@@ -1,84 +1,89 @@
-.books-container {
+.books {
     display: flex; 
     flex-direction: row; 
     flex-wrap: nowrap; 
     transition: transform 0.3s ease;
-    padding: 10px 0;
+    padding: var(--spacing-md) 0;
+    position: relative;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .book-card {
     display: flex;
     flex-direction: column;
-    flex: 0 0 290px;
-    background: #EEF2FF;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 0 0 var(--book-card-width);
+    background: var(--bg-cart);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
     text-align: start;
     list-style: none;
 }
 
 .book-cover {
     width: 100%;
-    height: 200px;
+    height: var(--book-cover-height);
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    background: #EEF2FF;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-xl);
+    background: var(--bg-cart);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .book-title {
-    font-size: 18px;
-    color: #2c3e50;
+    font-size: var(--font-size-2xl);
+    color: var(--text-secondary);
 }
 
 .book-author {
-    color: #808BF6;
-    font-size: 15px;
+    color: var(--text-author);
+    font-size: var(--font-size-lg);
 }
 
 .add-to-cart {
     margin-top: auto;
-    background-color: #000000;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: var(--spacing-md) var(--spacing-3xl);
+    border-radius: var(--radius-md);
     cursor: pointer;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: var(--transition-fast);
     position: relative;
     overflow: hidden;
 }
 
 .add-to-cart:hover {
-    background-color: #4A4CCC;
-    box-shadow: 0 4px 12px rgba(71, 19, 103, 0.3);
+    background-color: var(--color-hover-secondary);
+    box-shadow: var(--shadow-lg);
 }
 
 .add-to-cart:active {
     transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(71, 19, 103, 0.3);
+    box-shadow: var(--shadow-xl);
 }
 
 .book-rating {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 14px;
+    gap: var(--spacing-md);
+    font-size: var(--font-size-md);
 }
 
 .stars {
     position: relative;
     display: inline-block;
-    border-radius: 30px;
-    color: #C7D2FE; 
-    font-size: 18px;
+    border-radius: var(--radius-2xl);
+    color: var(--color-star-empty); 
+    font-size: var(--font-size-2xl);
 }
 
 .stars::before {
@@ -88,23 +93,31 @@
     top: 0;
     width: calc(var(--rating) * 20%);
     overflow: hidden;
-    color: #81C815;
+    color: var(--color-star-filled);
 }
     
 .book-desc {
-    font-size: 14px;
+    font-size: var(--font-size-md);
     flex-grow: 1; 
     margin: 1rem 0 2rem 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-secondary);
 }
 
 .book-author-rating {
     display: flex; 
     align-items: center; 
-    gap: 15px; 
+    gap: var(--spacing-xl); 
 }
 
-.carouselcontainer {
-    width: 1500px;
-    height: 450px;
+.title-price {
+    display: flex;
+}
+
+.book-price {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-dark);
+    margin-left: auto;
+    margin-bottom: var(--spacing-xl);
 }
