@@ -2,30 +2,138 @@
   "books": [
     {
       "id": 1,
-      "title": "The Midnight Library",
-      "author": "Matt Haig",
-      "cover": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
-      "price": 12.99,
-      "desc": "A novel about a library that contains books that let you experience the lives you could have lived.",
-      "rating": 4.5
+      "title": "Cooking made easy",
+      "cover": "imgs/bc/1.svg",
+      "author": "Emily Clark",
+      "rating": 5,
+      "price": 5.99,
+      "desc": "Simple recipes for everyday cooking."
     },
     {
       "id": 2,
-      "title": "Atomic Habits",
-      "author": "James Clear",
-      "cover": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400",
-      "price": 11.99,
-      "desc": "An easy & proven way to build good habits & break bad ones.",
-      "rating": 4.8
+      "title": "Mystery of the old house",
+      "cover": "imgs/bc/2.svg",
+      "author": "John Doe",
+      "rating": 5,
+      "price": 6.00,
+      "desc": "A thrilling mystery set in an old house."
     },
     {
       "id": 3,
-      "title": "The Alchemist",
-      "author": "Paulo Coelho",
-      "cover": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400",
-      "price": 9.99,
-      "desc": "A mystical story about following your dreams.",
-      "rating": 4.7
+      "title": "Shadows of Doubt",
+      "cover": "imgs/bc/3.svg",
+      "author": "Sarah Johnson",
+      "rating": 5,
+      "price": 6.99,
+      "desc": "A gripping psychological thriller."
+    },
+    {
+      "id": 4,
+      "title": "The Art of War",
+      "cover": "imgs/bc/4.svg",
+      "author": "Sun Tzu",
+      "rating": 5,
+      "price": 6.99,
+      "desc": "A classic treatise on strategy."
+    },
+    {
+      "id": 5,
+      "title": "The Great Gatsby",
+      "cover": "imgs/bc/5.svg",
+      "author": "F. Scott Fitzgerald",
+      "rating": 5,
+      "price": 7.99,
+      "desc": "A story of love and ambition."
+    },
+    {
+      "id": 6,
+      "title": "TESTSUBJECT",
+      "cover": "imgs/bc/6.svg",
+      "author": "Test Subject.",
+      "rating": 5,
+      "price": 1.99,
+      "desc": "A test subject to test the carousel."
+    },
+    {
+      "id": 7,
+      "title": "TESTSUBJECT2",
+      "cover": "imgs/bc/7.svg",
+      "author": "Test2 Subject2.",
+      "rating": 5,
+      "price": 1.99,
+      "desc": "A test subject to test the carousel. 2"
+    },
+    {
+      "id": 8,
+      "title": "Because I'm Happy",
+      "cover": "imgs/bc/1.svg",
+      "author": "Clap Along",
+      "rating": 5,
+      "price": 0.99,
+      "desc": "If you feel like a room without a roof."
+    },
+    {
+      "id": 9,
+      "title": "The Amber City",
+      "cover": "imgs/bc/2.svg",
+      "author": "Jane Doe",
+      "rating": 5,
+      "price": 6.99,
+      "desc": "A mapmaker in a city that doesn't exist."
+    },
+    {
+      "id": 10,
+      "title": "Echoes of a Silent Star",
+      "cover": "imgs/bc/3.svg",
+      "author": "Kaelen Vance",
+      "rating": 5,
+      "price": 5.99,
+      "desc": "Survivor of a space mission awakens."
+    },
+    {
+      "id": 11,
+      "title": "The Glided Wyrm",
+      "cover": "imgs/bc/4.svg",
+      "author": "Elara Vancroft",
+      "rating": 5,
+      "price": 6.99,
+      "desc": "Where debt is etched onto skin."
+    },
+    {
+      "id": 12,
+      "title": "Whispers in the Steetrock",
+      "cover": "imgs/bc/5.svg",
+      "author": "Moira Finch",
+      "rating": 5,
+      "price": 8.99,
+      "desc": "A family moves into their dream home."
+    },
+    {
+      "id": 13,
+      "title": "TESTSUBJECT3",
+      "cover": "imgs/bc/6.svg",
+      "author": "Test3 Subject3.",
+      "rating": 5,
+      "price": 4.99,
+      "desc": "A test subject to test the carousel 3."
+    },
+    {
+      "id": 14,
+      "title": "TESTSUBJECT4",
+      "cover": "imgs/bc/7.svg",
+      "author": "Test4 Subject4.",
+      "rating": 5,
+      "price": 3.99,
+      "desc": "A test subject to test the carousel 4."
+    },
+    {
+      "id": 15,
+      "title": "The Saffron Scribe",
+      "cover": "imgs/bc/1.svg",
+      "author": "Benjamin Holloway",
+      "rating": 5,
+      "price": 2.99,
+      "desc": "A deaf scribe becomes the unintended keeper of a secret."
     }
   ]
 }
