@@ -1,5 +1,4 @@
-{
-  "books": [
+[
     {
       "id": 1,
       "title": "Cooking made easy",
@@ -136,4 +135,3 @@
       "desc": "A deaf scribe becomes the unintended keeper of a secret."
     }
   ]
-}
