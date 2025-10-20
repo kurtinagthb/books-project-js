@@ -3,6 +3,7 @@ header {
 	background-color: var(--bg-quinary);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-3xl);
+    height: var(--exp-header);
 }
 nav {
     background: linear-gradient(to bottom, var(--bg-quinary), transparent);
