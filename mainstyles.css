@@ -27,14 +27,12 @@
 }
 
 :root {
-/*clr palette*/
     --color-primary: #6B6EF1;
     --color-primary-dark: #4A4CCC;
     --color-secondary: #312F5A;
     --color-accent: #808BF6;
     --color-accent-light: #EEF2FF;
     
-/*bg*/
     --bg-primary: #ffffff;
     --bg-secondary: #FEF9C3;
     --bg-tertiary: #E4E4E7;
@@ -43,7 +41,6 @@
     --bg-dark: #000000;
     --bg-cart: #EEF2FF;
     
-/*font clrs*/
     --text-primary: #312F5A;
     --text-secondary: #2c3e50;
     --text-tertiary: #1a1a1a;
@@ -52,7 +49,6 @@
     --text-light: #FFFFFF;
     --text-author: #808BF6;
     
-/*hover clrs*/
     --color-hover: #000000;
     --color-hover-secondary: #4A4CCC;
     --color-hover-tertiary: #6B6EF1;
@@ -62,13 +58,11 @@
     --color-star-empty: #C7D2FE;
     --color-cart-counter: red;
     
-/*fonts*/
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-secondary: Arial, Helvetica, sans-serif;
     --font-tertiary: Arial, sans-serif;
     --font-search: Tahoma, sans-serif;
     
-/*font sizes*/
     --font-size-xs: 11px;
     --font-size-sm: 12px;
     --font-size-base: 13px;
@@ -78,13 +72,11 @@
     --font-size-2xl: 18px;
     --font-size-3xl: 20px;
     
-/*font weights*/
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     
-/*spacing*/
     --spacing-xs: 5px;
     --spacing-sm: 8px;
     --spacing-md: 10px;
@@ -95,8 +87,9 @@
     --spacing-4xl: 30px;
     --spacing-5xl: 40px;
     --spacing-6xl: 60px;
+    --spacing-7xl: 80px;
+    --spacing-8xl: 100px;
     
-/*border-radius*/
     --radius-sm: 4px;
     --radius-md: 5px;
     --radius-lg: 8px;
@@ -104,16 +97,14 @@
     --radius-2xl: 30px;
     --radius-full: 50%;
     
-/*shadows*/
     --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 4px 12px rgba(71, 19, 103, 0.3);
     --shadow-xl: 0 2px 6px rgba(71, 19, 103, 0.3);
-    
-/*trans*/
+
+
     --transition-fast: all 0.3s ease;
     
-/*layout*/
     --container-max-width: 1200px;
     --book-card-width: 290px;
     --book-cover-height: 200px;
@@ -123,7 +114,8 @@
     --search-width: 188px;
     --search-height: 32px;
     
-/*z*/
     --z-nav: 1000;
     --z-cart-counter: 1001;
+
+    --exp-header: 453px;
 }

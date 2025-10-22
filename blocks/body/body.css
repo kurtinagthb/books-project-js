@@ -61,3 +61,44 @@ body {
 .explore-button:active {
     transform: translateY(0);
 }
+
+.fav-books {
+    display: flex;
+    max-width: fit-content;
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-6xl);
+    gap: var(--spacing-8xl);
+    align-items: center;
+    margin: 0 auto;  
+}
+
+.fav-book-pic {
+    object-fit: contain;
+}
+
+.fav-books p {
+    max-width: 394px;
+}
+
+.fav-books-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: var(--spacing-4xl);
+
+}
+
+.fb-sp1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-3xl);
+}
+
+.fb-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fb-stat {
+    display: flex;
+    gap: var(--spacing-6xl)
+}

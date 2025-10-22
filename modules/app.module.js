@@ -1,10 +1,26 @@
 import { renderBooks } from "./ui.module.js";
 import { DM } from "./data.module.js"
-import { addToCart, removeFromCart, updateCartDisplay, updateItemQuantity } from "./cart.module.js";
+import { CartModule } from "./cart.module.js";
 import { carouselFunc } from './swiper.module.js';
 
-export function initBooks() {
-    const bookList = DM.getBookList();
+export function addToCart(id) {
+    CartModule.addToCart(id);
+}
+
+export function updateItemQuantity(action, id) {
+    CartModule.updateItemQuantity(action, id);
+}
+
+export function removeFromCart(id) {
+    CartModule.removeFromCart(id);
+}
+
+export function updateCartDisplay() {
+    CartModule.updateCartDisplay();
+}
+
+export async function initBooks() {
+    const bookList = await DM.getBookList();
     const containers = {
         'book-list-sect': bookList.slice(0, 8),
         'new-releases-sect': bookList.slice(7, 15),
@@ -21,8 +37,9 @@ export function initBooks() {
     carouselFunc.init();
 }
 
-export function initSearch() {
+export async function initSearch() {
     let searchTimeout;
+    const bookList = await DM.getBookList();
 
     document.addEventListener('input', (e) => {
         const searchInput = document.getElementById("search_form");
@@ -31,7 +48,7 @@ export function initSearch() {
         clearTimeout(searchTimeout);
 
         searchTimeout = setTimeout(() => {
-            const bookList = DM.getBookList();
+
             const query = e.target.value.toLowerCase().trim();
 
             if (!query) {
@@ -63,28 +80,21 @@ export function initSearch() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    initBooks();
-    initSearch();
-    updateCartDisplay();
-});
-
 document.addEventListener('click', (e) => {
+    
     if (e.target.classList.contains('add-to-cart')) {
         const bookCard = e.target.closest('.book-card');
-        if (bookCard) {
+        if (bookCard && bookCard.dataset.id) {
             const id = Number(bookCard.dataset.id);
             addToCart(id);
         }
+        return;
     }
-});
-
-document.addEventListener('click', (e) => {
+    
     const cartItem = e.target.closest('.cart-item');
     if (!cartItem) return;
-
+    
     const id = Number(cartItem.dataset.id);
-
     if (e.target.classList.contains('plus')) {
         updateItemQuantity("plus", id);
     } else if (e.target.classList.contains('minus')) {

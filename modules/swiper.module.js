@@ -1,6 +1,8 @@
+import { classes } from "./general.js";
+
 export const carouselFunc = (() => {
     function init() {
-        document.querySelectorAll('.books').forEach(booksList => {
+        document.querySelectorAll(classes.dot_books).forEach(booksList => {
             enableDragScroll(booksList);
         });
     }
@@ -44,7 +46,7 @@ export const carouselFunc = (() => {
     }
     
     function refresh() {
-        document.querySelectorAll('.books').forEach(booksList => {
+        document.querySelectorAll(classes.dot_books).forEach(booksList => {
             booksList.scrollLeft = 0;
         });
     }
