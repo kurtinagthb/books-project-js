@@ -14,7 +14,7 @@
       "title": "Mystery of the old house",
       "cover": "imgs/bc/2.svg",
       "author": "John Doe",
-      "rating": 5,
+      "rating": 4,
       "price": 6.00,
       "desc": "A thrilling mystery set in an old house."
     },
@@ -32,7 +32,7 @@
       "title": "The Art of War",
       "cover": "imgs/bc/4.svg",
       "author": "Sun Tzu",
-      "rating": 5,
+      "rating": 3,
       "price": 6.99,
       "desc": "A classic treatise on strategy."
     },
@@ -50,7 +50,7 @@
       "title": "TESTSUBJECT",
       "cover": "imgs/bc/6.svg",
       "author": "Test Subject.",
-      "rating": 5,
+      "rating": 1,
       "price": 1.99,
       "desc": "A test subject to test the carousel."
     },
@@ -59,7 +59,7 @@
       "title": "TESTSUBJECT2",
       "cover": "imgs/bc/7.svg",
       "author": "Test2 Subject2.",
-      "rating": 5,
+      "rating": 1,
       "price": 1.99,
       "desc": "A test subject to test the carousel. 2"
     },
@@ -68,7 +68,7 @@
       "title": "Because I'm Happy",
       "cover": "imgs/bc/1.svg",
       "author": "Clap Along",
-      "rating": 5,
+      "rating": 3,
       "price": 0.99,
       "desc": "If you feel like a room without a roof."
     },
@@ -77,7 +77,7 @@
       "title": "The Amber City",
       "cover": "imgs/bc/2.svg",
       "author": "Jane Doe",
-      "rating": 5,
+      "rating": 4,
       "price": 6.99,
       "desc": "A mapmaker in a city that doesn't exist."
     },
@@ -95,7 +95,7 @@
       "title": "The Glided Wyrm",
       "cover": "imgs/bc/4.svg",
       "author": "Elara Vancroft",
-      "rating": 5,
+      "rating": 3,
       "price": 6.99,
       "desc": "Where debt is etched onto skin."
     },
@@ -113,7 +113,7 @@
       "title": "TESTSUBJECT3",
       "cover": "imgs/bc/6.svg",
       "author": "Test3 Subject3.",
-      "rating": 5,
+      "rating": 2,
       "price": 4.99,
       "desc": "A test subject to test the carousel 3."
     },
@@ -122,7 +122,7 @@
       "title": "TESTSUBJECT4",
       "cover": "imgs/bc/7.svg",
       "author": "Test4 Subject4.",
-      "rating": 5,
+      "rating": 2,
       "price": 3.99,
       "desc": "A test subject to test the carousel 4."
     },
