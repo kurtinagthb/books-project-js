@@ -1,29 +1,15 @@
-@import url('blocks/search/search-form.css');
-@import url('blocks/header/header.css');
-@import url('blocks/body/body.css');
-@import url('blocks/footer/footer.css');
-@import url('blocks/nav/nav.css');
-@import url('blocks/books/book-container.css');
+@import url('blocks/search-form.css');
+@import url('blocks/header.css');
+@import url('blocks/body.css');
+@import url('blocks/footer.css');
+@import url('blocks/nav.css');
+@import url('blocks/book-container.css');
+@import url('mobile.css');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.cart-counter {
-    z-index: var(--z-cart-counter);
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    background-color: var(--color-cart-counter);
-    color: var(--text-light);
-    border-radius: var(--radius-full);
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: var(--font-size-sm);
 }
 
 :root {
@@ -32,7 +18,7 @@
     --color-secondary: #312F5A;
     --color-accent: #808BF6;
     --color-accent-light: #EEF2FF;
-    
+
     --bg-primary: #ffffff;
     --bg-secondary: #FEF9C3;
     --bg-tertiary: #E4E4E7;
@@ -40,7 +26,7 @@
     --bg-quinary: #E9D5FF;
     --bg-dark: #000000;
     --bg-cart: #EEF2FF;
-    
+
     --text-primary: #312F5A;
     --text-secondary: #2c3e50;
     --text-tertiary: #1a1a1a;
@@ -48,7 +34,7 @@
     --text-quinary: #64748b;
     --text-light: #FFFFFF;
     --text-author: #808BF6;
-    
+
     --color-hover: #000000;
     --color-hover-secondary: #4A4CCC;
     --color-hover-tertiary: #6B6EF1;
@@ -57,12 +43,12 @@
     --color-star-filled: #81C815;
     --color-star-empty: #C7D2FE;
     --color-cart-counter: red;
-    
+
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-secondary: Arial, Helvetica, sans-serif;
     --font-tertiary: Arial, sans-serif;
     --font-search: Tahoma, sans-serif;
-    
+
     --font-size-xs: 11px;
     --font-size-sm: 12px;
     --font-size-base: 13px;
@@ -71,12 +57,12 @@
     --font-size-xl: 16px;
     --font-size-2xl: 18px;
     --font-size-3xl: 20px;
-    
+
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    
+
     --spacing-xs: 5px;
     --spacing-sm: 8px;
     --spacing-md: 10px;
@@ -89,22 +75,22 @@
     --spacing-6xl: 60px;
     --spacing-7xl: 80px;
     --spacing-8xl: 100px;
-    
+
     --radius-sm: 4px;
     --radius-md: 5px;
     --radius-lg: 8px;
     --radius-xl: 10px;
     --radius-2xl: 30px;
     --radius-full: 50%;
-    
-    --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
+
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 4px 12px rgba(71, 19, 103, 0.3);
     --shadow-xl: 0 2px 6px rgba(71, 19, 103, 0.3);
 
 
     --transition-fast: all 0.3s ease;
-    
+
     --container-max-width: 1200px;
     --book-card-width: 290px;
     --book-cover-height: 200px;
@@ -113,7 +99,7 @@
     --logo-size: 70px;
     --search-width: 188px;
     --search-height: 32px;
-    
+
     --z-nav: 1000;
     --z-cart-counter: 1001;
 

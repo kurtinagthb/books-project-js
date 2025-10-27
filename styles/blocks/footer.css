@@ -1,0 +1,66 @@
+footer {
+    margin-top: auto;
+    max-width: 100%;
+    padding: 2rem;
+    background: var(--bg-dark);
+}
+
+.footer-div p {
+    font-size: var(--font-size-md);
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.footer-links li {
+    list-style: none;
+    font-size: var(--font-size-md);
+    margin-top: 1rem;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background: var(--text-light);
+    margin: var(--spacing-3xl) 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bg-dark);
+    font-family: var(--font-tertiary);
+    color: var(--text-light);
+    padding: var(--spacing-5xl);
+    list-style: none;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.footer-bottom h4 {
+    background-color: black;
+    color: white;
+    font-family: var(--font-secondary);
+    text-align: center;
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-5xl);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-md);
+}
+
+.footer-bottom hr {
+    width: 100%;
+    border-style: dashed;
+}
+
+.visa {
+    width: 70px;
+}
+
+.mastercard {
+    width: 45px;
+}
