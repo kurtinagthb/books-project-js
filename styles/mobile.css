@@ -2,18 +2,7 @@
     * {
         font-size: 14px;
     }
-
-    :root {
-        --container-max-width: 100%;
-        --book-card-width: 280px;
-        --spacing-3xl: 15px;
-        --spacing-4xl: 20px;
-        --spacing-5xl: 25px;
-        --spacing-6xl: 30px;
-        --spacing-7xl: 40px;
-        --spacing-8xl: 50px;
-    }
-
+    
     header {
         padding-top: 60px;
     }
