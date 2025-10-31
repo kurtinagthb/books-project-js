@@ -2,103 +2,111 @@
 <html lang='en'>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="mainstyles.css">
-    <link rel="stylesheet" type="text/css" href="page-exclusive-css/explore.css">
+    <link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
+    <link rel="stylesheet" type="text/css" href="styles/page-exclusive-css/explore.css">
     <title>Books!</title>
     <link rel="icon" href="imgs/icon.svg" type="image/svg+xml">
 </head>
+
 <body>
+
+    <nav>
+        <div class="logo-nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="imgs/logo.png" alt="books" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">SELL YOUR BOOK</a></li>
+                <li>
+                    <span class="cart-counter" id="itemsCount">0</span>
+                    <a href="cart.html">
+                        <img src="imgs/cart.svg" alt="CART">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
-        <a href="index.html" class="logo-link">
-            <img src="imgs/logo.png" alt="books" class="logo">
-        </a>
         <div class="header-container">
             <div class="header-content">
                 <p>Find your favorite — 1200+ books availible.</p>
                 <div class="search-form">
+                    <img src="imgs/search.svg" class="search-icon">
                     <input type="search" class="search-form__input" id="search_form" placeholder="Search For Books...">
-                    <i class="search-form__icon fas fa-search"></i>
                 </div>
             </div>
             <img src="imgs/bookpic.png" width="300" height="200" alt="Books" class="main-pic">
         </div>
         </div>
     </header>
-    
-    <nav>
-        <span class="cart-counter" id="itemsCount">0</span>
-        <div class="nav-exp">
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="explore.html">EXPLORE</a></li>
-                <li><a href="">SHOP</a></li>
-                <li><a href="">SELL YOUR BOOK</a></li>
-                <li><a href="cart.html">CART</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <h2 class="h2">New Releases</h2>
     <div class="book-container">
         <ul class="books" id="new-releases-sect">
-        </ul>        
+        </ul>
     </div>
 
     <h2 class="h2">Top Rated Books</h2>
     <div class="book-container">
         <ul class="books" id="top-rated-sect">
-        </ul>        
+        </ul>
     </div>
 
     <h2 class="h2">Our Suggestions</h2>
     <div class="book-container">
         <ul class="books" id="suggestions-sect">
-        </ul>        
+        </ul>
     </div>
- 
+
     <h2 class="h2">Most Popular Books</h2>
     <div class="book-container">
         <ul class="books" id="popular-sect">
-        </ul>        
+        </ul>
     </div>
 
     <footer>
-        <div class="footer-div">
-            <h3>Books</h3>
-            <p>Books delivered. Imagination unlimited.</p>
+        <div class="footer-content">
+            <div class="footer-div">
+                <h3>Books</h3>
+                <p>Books delivered. Imagination unlimited.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><a href="Email: mssonukr@gmail.com" onclick="alert()">
+                            example@site.com
+                        </a></li>
+                    <li><a href="Phone: +91 7061543815" onclick="alert()">
+                            +7 (916) 123-45-67
+                        </a>
+                    <li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h3>We Accept</h3>
+                <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
+                <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+            </div>
         </div>
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <h3>Contacts</h3>
-            <ul>
-                <li><a href="Email: mssonukr@gmail.com" onclick="alert('Go to Email?: mssonukr@gmail.com')">
-                        example@site.com
-                    </a></li>
-                <li><a href="Phone: +91 7061543815" onclick="alert('Go to Contacts?: +91 7061543815')">
-                        +7 (916) 123-45-67
-                    </a>
-                <li>
-            </ul>
-        </div>
-        <div class="footer-div">
-            <h3>We Accept</h3>
-            <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
-            <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+        <div class="footer-bottom">
+            <hr />
+            <h4>All rights reserved.</h4>
         </div>
     </footer>
-    <hr style="width: 10" />
-    <h4
-        style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">
-        All rights reserved.</h4>
 
     <script type="module" src="./main.js"></script>
 </body>

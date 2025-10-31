@@ -5,6 +5,11 @@ header {
     font-size: var(--font-size-3xl);
     height: var(--exp-header);
 }
+
+.logo-nav-container {
+    background: var(--bg-quinary);
+}
+
 nav {
     background: linear-gradient(to bottom, var(--bg-quinary), transparent);
 }

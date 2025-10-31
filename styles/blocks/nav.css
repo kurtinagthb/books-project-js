@@ -1,0 +1,112 @@
+.logo-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-tertiary);
+    z-index: var(--z-nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+nav {
+    display: flex;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    gap: var(--spacing-3xl);
+}
+
+nav li {
+    position: relative;
+}
+
+.cart-counter {
+    z-index: var(--z-cart-counter);
+    position: absolute;
+    top: -13px;
+    left: 24px;
+    background-color: var(--color-cart-counter);
+    color: var(--text-light);
+    border-radius: var(--radius-full);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: var(--font-size-sm);
+}
+
+.nav-logo,
+.logo {
+    position: static;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-3xl);
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    letter-spacing: 0.3px;
+    padding: var(--spacing-sm) var(--spacing-xs);
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--text-primary);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-logo {
+    position: fixed;
+    margin-left: 3rem;
+    object-fit: contain;
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+.logo {
+    margin-left: 3rem;
+    object-fit: contain;
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}

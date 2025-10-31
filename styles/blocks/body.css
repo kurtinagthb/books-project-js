@@ -1,8 +1,11 @@
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--bg-primary);
     font-family: var(--font-primary);
     color: var(--text-primary);
     flex-grow: 1;
+    min-height: 100vh;
 }
 
 .h2 {
@@ -101,4 +104,10 @@ body {
 .fb-stat {
     display: flex;
     gap: var(--spacing-6xl)
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
 }

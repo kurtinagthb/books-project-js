@@ -1,5 +1,10 @@
 header, body {
     background-color: var(--bg-quaternary);
+    height: 100%;
+}
+
+.logo-nav-container {
+    background: var(--bg-quaternary);
 }
 
 nav {
@@ -79,7 +84,7 @@ nav {
 }
 .cart-body {
 	display: flex;
-	flex-direction: rows;
+    flex: 1 1 auto;
 }
 
 .cart-but-empty {
@@ -158,29 +163,42 @@ nav {
 }
 
 .remove-btn {
-    background: var(--bg-dark);
-    color: var(--text-light);
-    width: var(--spacing-xl);
-    height: var(--spacing-xl);
-    border-radius: var(--radius-xl);
-    font-weight: var(--font-weight-medium);
+    background-color: var(--bg-primary);
     border: none;
     cursor: pointer;
     flex-shrink: 0;
 }
 
-.remove-btn:hover {
-    background: var(--color-primary);
-
-}
-
 .plus, .minus {
     cursor: pointer;
+    border: none;
+    background: var(--bg-primary);
+    width: 13px; 
 }
 
 .units-remove {
     display: flex;
-    flex-direction: row;
     margin-left: auto;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xl);
+}
+
+.unit {
+    display: flex;
+    gap: 10px;
+}
+
+.price-units {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.units-num {
+    display: flex;
+    gap: 8px;
+}
+
+.book-price-cart {
+    font-weight: var(--font-weight-bold);
 }

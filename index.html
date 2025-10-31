@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
-<link rel="stylesheet" type="text/css" href="mainstyles.css">
+<link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <head>
@@ -10,122 +10,136 @@
     <link rel="icon" href="imgs/icon.svg" type="image/svg+xml">
 </head>
 
-<header>
-    <a href="index.html" class="logo-link">
-        <img src="imgs/logo.png" alt="books" class="logo">
-    </a>
-    <div class="header-container">
-        <div class="header-content">
-            <h1>Buy and sell your books <span style="color: #6B6EF1;">for the best prices.</span></h1>
-            <p>Find and read more you'll love, and keep track of the books you want to read.<br>
-                Be part of the world's largest community of book lovers on Goodreads.</p>
-            <div class="search-form">
-                <input type="search" class="search-form__input" id="search_form" placeholder="Search For Books...">
-                <i class="search-form__icon fas fa-search"></i>
-            </div>
-        </div>
-        <img src="imgs/mainpic.png" width="250" height="300" alt="Books" class="main-pic">
-    </div>
-</header>
-
-<nav>
-    <span class="cart-counter" id="itemsCount">0</span>
-    <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="explore.html">EXPLORE</a></li>
-        <li><a href="">SHOP</a></li>
-        <li><a href="">SELL YOUR BOOK</a></li>
-        <li><a href="cart.html">CART</a></li>
-    </ul>
-</nav>
 
 <body>
-    <h2 class="h2">Book List</h2>
-    <div class="book-container">
-        <ul class="books" id="book-list-sect">
-        </ul>
-    </div>
+    <nav>
+        <div class="logo-nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="imgs/logo.png" alt="books" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">SELL YOUR BOOK</a></li>
+                <li>
+                    <span class="cart-counter" id="itemsCount">0</span>
+                    <a href="cart.html">
+                        <img src="imgs/cart.svg" alt="CART">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="fav-books">
-        <img src="imgs/favbook.svg" class="fav-book-pic">
-        <div class="fav-books-content">
-            <h2>Find Your Favorite <span style="color: #6B6EF1;">Book Here!</span></h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Quo ad non reprehenderit. Reiciendis illo iusto
-                incidunt distinctio exercitationem officiis dicta dolores
-                dolorem ea! Non saepe, voluptatum cupiditate beatae
-                in dolore!</p>
-            <div class="fb-stat">
-                <div class="fb-div">
-                    <span class="fb-sp1">880+</span>
-                    <span class="fb-sp2">Book Listing</span>
-                </div>
-                <div class="fb-div">
-                    <span class="fb-sp1">550+</span>
-                    <span class="fb-sp2">Register User</span>
-                </div>
-                <div class="fb-div">
-                    <span class="fb-sp1">1,200+</span>
-                    <span class="fb-sp2">Books Sold</span>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <h1>Buy and sell your books <span style="color: #6B6EF1;">for the best prices.</span></h1>
+                <p>Find and read more you'll love, and keep track of the books you want to read.<br>
+                    Be part of the world's largest community of book lovers on Goodreads.</p>
+                <div class="search-form">
+                    <img src="imgs/search.svg" class="search-icon">
+                    <input type="search" class="search-form__input" id="search_form" placeholder="Search For Books...">
                 </div>
             </div>
-        <form action="explore.html" method="get">
-        <button type="submit" class="explore-button">Explore Now</button>
-        </form>
+            <img src="imgs/mainpic.png" width="250" height="300" alt="Books" class="main-pic">
         </div>
-    </div>
+    </header>
 
+    <main>
 
-    <div class="award-container">
-        <div class="award-content">
-            <h2>2025 National Book Awards for Fiction Shortlist</h2>
-            <form action="explore.html" method="get">
-                <button type="submit" class="explore-button">Explore Now</button>
-            </form>
-        </div>
-        <img src="imgs/award.png" width="250" height="300" alt="Books" class="award-pic">
-
-    </div>
-    <h2 class="h2">New Realeases</h2>
-    <div class="book-container" id="carousel">
-        <ul class="books" id="new-releases-sect">
+        <h2 class="h2">Book List</h2>
+        <ul class="books" id="book-list-sect">
+            <div class="book-card"></div>
         </ul>
-    </div>
+        </div>
+
+        <div class="fav-books">
+            <img src="imgs/favbook.svg" class="fav-book-pic">
+            <div class="fav-books-content">
+                <h2>Find Your Favorite <span style="color: #6B6EF1;">Book Here!</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Quo ad non reprehenderit. Reiciendis illo iusto
+                    incidunt distinctio exercitationem officiis dicta dolores
+                    dolorem ea! Non saepe, voluptatum cupiditate beatae
+                    in dolore!</p>
+                <div class="fb-stat">
+                    <div class="fb-div">
+                        <span class="fb-sp1">880+</span>
+                        <span class="fb-sp2">Book Listed</span>
+                    </div>
+                    <div class="fb-div">
+                        <span class="fb-sp1">550+</span>
+                        <span class="fb-sp2">Registered Users</span>
+                    </div>
+                    <div class="fb-div">
+                        <span class="fb-sp1">1,200+</span>
+                        <span class="fb-sp2">Books Sold</span>
+                    </div>
+                </div>
+                <form action="explore.html" method="get">
+                    <button type="submit" class="explore-button">Explore Now</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="award-container">
+            <div class="award-content">
+                <h2>2025 National Book Awards for Fiction Shortlist</h2>
+                <form action="explore.html" method="get">
+                    <button type="submit" class="explore-button">Explore Now</button>
+                </form>
+            </div>
+            <img src="imgs/award.png" width="250" height="300" alt="Books" class="award-pic">
+
+        </div>
+        <h2 class="h2">New Realeases</h2>
+        <div class="book-container" id="carousel">
+            <ul class="books" id="new-releases-sect">
+            </ul>
+        </div>
+
+    </main>
+
     <footer>
-        <div class="footer-div">
-            <h3>Books</h3>
-            <p>Books delivered. Imagination unlimited.</p>
+        <div class="footer-content">
+            <div class="footer-div">
+                <h3>Books</h3>
+                <p>Books delivered. Imagination unlimited.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Contacts</h3>
+                <ul>
+                    <li><a href="Email: mssonukr@gmail.com" onclick="alert()">
+                            example@site.com
+                        </a></li>
+                    <li><a href="Phone: +91 7061543815" onclick="alert()">
+                            +7 (916) 123-45-67
+                        </a>
+                    <li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h3>We Accept</h3>
+                <img src=imgs\673469.png class="visa" alt="Visa">
+                <img src=imgs\MasterCard_Logo.svg.png class="mastercard" alt="Mastercard">
+            </div>
         </div>
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <h3>Contacts</h3>
-            <ul>
-                <li><a href="Email: mssonukr@gmail.com" onclick="alert('Go to Email?: mssonukr@gmail.com')">
-                        example@site.com
-                    </a></li>
-                <li><a href="Phone: +91 7061543815" onclick="alert('Go to Contacts?: +91 7061543815')">
-                        +7 (916) 123-45-67
-                    </a>
-                <li>
-            </ul>
-        </div>
-        <div class="footer-div">
-            <h3>We Accept</h3>
-            <img src=imgs\673469.png width="70" lenght="70" alt="Visa">
-            <img src=imgs\MasterCard_Logo.svg.png width="45" lenght="45" alt="Mastercard">
+        <div class="footer-bottom">
+            <hr />
+            <h4>All rights reserved.</h4>
         </div>
     </footer>
-    <hr style="width: 10" />
-    <h4
-        style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 20px; padding-bottom: 35px">
-        All rights reserved.</h4>
     <script type="module" src="./main.js"></script>
 </body>
 

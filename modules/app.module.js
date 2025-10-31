@@ -2,24 +2,12 @@ import { renderBooks } from "./ui.module.js";
 import { DM } from "./data.module.js"
 import { CartModule } from "./cart.module.js";
 import { carouselFunc } from './swiper.module.js';
+import { classes, containers } from './general.js';
 
-export function addToCart(id) {
-    CartModule.addToCart(id);
-}
-
-export function updateItemQuantity(action, id) {
-    CartModule.updateItemQuantity(action, id);
-}
-
-export function removeFromCart(id) {
-    CartModule.removeFromCart(id);
-}
-
-export function updateCartDisplay() {
-    CartModule.updateCartDisplay();
-}
 
 export async function initBooks() {
+    
+    showSkeletonsForAllContainers();
     const bookList = await DM.getBookList();
     const containers = {
         'book-list-sect': bookList.slice(0, 8),
@@ -37,15 +25,28 @@ export async function initBooks() {
     carouselFunc.init();
 }
 
+function showSkeletonsForAllContainers() {
+
+    containers.forEach(containerId => {
+        const container = document.getElementById(containerId);
+        if (container) {
+            renderBooks(containerId, [], true); 
+        }
+    });
+
+}
+
 export async function initSearch() {
     let searchTimeout;
     const bookList = await DM.getBookList();
 
     document.addEventListener('input', (e) => {
-        const searchInput = document.getElementById("search_form");
+        const searchInput = document.getElementById(classes.search_form);
         if (!searchInput) return;
 
         clearTimeout(searchTimeout);
+
+        showSkeletonsForAllContainers();
 
         searchTimeout = setTimeout(() => {
 
@@ -61,45 +62,38 @@ export async function initSearch() {
                 book.author.toLowerCase().includes(query) ||
                 book.desc.toLowerCase().includes(query)
             );
-            const availableContainers = [
-                'book-list-sect',     
-                'new-releases-sect',   
-                'top-rated-sect',       
-                'suggestions-sect',    
-                'popular-sect'         
-            ];
 
-            availableContainers.forEach(containerId => {
+            containers.forEach(containerId => {
                 if (document.getElementById(containerId)) {
                     renderBooks(containerId, searched);
                 }
             });
-        carouselFunc.refresh();
+            carouselFunc.refresh();
 
         }, 300);
     });
 }
 
 document.addEventListener('click', (e) => {
-    
-    if (e.target.classList.contains('add-to-cart')) {
-        const bookCard = e.target.closest('.book-card');
+
+    if (e.target.classList.contains(classes.add_to_cart)) {
+        const bookCard = e.target.closest(classes.book_card);
         if (bookCard && bookCard.dataset.id) {
             const id = Number(bookCard.dataset.id);
-            addToCart(id);
+            CartModule.addToCart(id);
         }
         return;
     }
-    
-    const cartItem = e.target.closest('.cart-item');
+
+    const cartItem = e.target.closest(classes.cart_item);
     if (!cartItem) return;
-    
+
     const id = Number(cartItem.dataset.id);
-    if (e.target.classList.contains('plus')) {
-        updateItemQuantity("plus", id);
-    } else if (e.target.classList.contains('minus')) {
-        updateItemQuantity("minus", id);
-    } else if (e.target.classList.contains('remove-btn')) {
-        removeFromCart(id);
+    if (e.target.classList.contains(classes.plus)) {
+        CartModule.updateItemQuantity("plus", id);
+    } else if (e.target.classList.contains(classes.minus)) {
+        CartModule.updateItemQuantity("minus", id);
+    } else if (e.target.classList.contains(classes.remove_btn)) {
+        CartModule.removeFromCart(id);
     }
 });
